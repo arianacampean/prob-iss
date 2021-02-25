@@ -19,6 +19,10 @@ Un spital are o farmacie proprie si mai multe sectii. Necesarul de medicamente p
 
 •un  terminal  pentru  farmacie:
 -Farmacistii  observa  lista  comenzilor  facute  de  pe  sectii
+
 -Prioritizata după momentul sosirii acestora daca medicamentele au aceeasi stare
--Pentru onorarea unei comenzi, farmacistul o selecteaza din lista, (pregateste medicamentele si le trimite pe sectii) dupa care declanseaza un ul nu este in stoc se va bifa casuta "comanda nefinalizata"(o sa fie trimisa imd dupa cea urgenta daca med intra in stoc) dar o sa se trimita restul med de pe comanda
+
+-Pentru onorarea unei comenzi, farmacistul o selecteaza din lista, (pregateste medicamentele si le trimite pe sectii) dupa care declanseaza un ul nu este in stoc se va bifa 
+casuta "comanda nefinalizata"(o sa fie trimisa imd dupa cea urgenta daca med intra in stoc) dar o sa se trimita restul med de pe comanda
+
 -Daca comanda este onorata, comanda este eliminata din lista afisata de farmacie si apare ca si onorata in fereastra sectiei care a inițiat-o. 
