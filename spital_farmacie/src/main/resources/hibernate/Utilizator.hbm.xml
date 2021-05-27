@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="domain.Utilizator"
+           table="Utilizator">
+        <id name="id" column="id_util" type="integer">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="nume"
+                column="nume"
+                type="string"/>
+        <property
+                name="prenume"
+                column="prenume"
+                type="string"/>
+        <property
+                name="username"
+                column="username"
+                type="string"/>
+        <property
+                name="parola"
+                column="parola"
+                type="string"/>
+
+        <property name="luc" column="lucreaza">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">domain.Lucreaza</param>
+            </type>
+        </property>
+
+
+    </class>
+</hibernate-mapping>

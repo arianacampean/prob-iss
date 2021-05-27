@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SPMedicController">
+   <children>
+      <Label layoutX="37.0" layoutY="26.0" text="Buna,">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nume" disable="true" editable="false" layoutX="80.0" layoutY="23.0" promptText="nume/prenume medic" />
+      <Label layoutX="416.0" layoutY="27.0" text="Sectia nr.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sectie" disable="true" editable="false" layoutX="476.0" layoutY="24.0" prefHeight="25.0" prefWidth="104.0" promptText="nr indtrod" />
+      <Button fx:id="comanda" layoutX="241.0" layoutY="174.0" mnemonicParsing="false" onAction="#showComandaNoua" prefHeight="25.0" prefWidth="118.0" text="Comanda noua" />
+      <Button fx:id="vizualiz" layoutX="220.0" layoutY="226.0" mnemonicParsing="false" onAction="#showVizualizare" text="Vizualizare detalii comanda" />
+      <Button layoutX="241.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="SignOut" onAction="#signOut"/>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViuzalizareDetController">
+   <children>
+      <Label layoutX="127.0" layoutY="48.0" prefHeight="29.0" prefWidth="94.0" text="Detalii comanda" />
+      <Button layoutX="24.0" layoutY="353.0" mnemonicParsing="false" onAction="#showInapoi" prefHeight="25.0" prefWidth="79.0" text="Inpoi" />
+      <Button fx:id="mod" onAction="#modif" layoutX="425.0" layoutY="293.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Modifica" />
+      <Button layoutX="412.0" layoutY="353.0" mnemonicParsing="false" onAction="#trimite" text="Trimite comanda" />
+      <Label layoutX="383.0" layoutY="54.0" text="Selecteaza medicamentul dorit" />
+      <Button fx:id="sterg" onAction="#del" layoutX="406.0" layoutY="119.0" mnemonicParsing="false" text="Sterge medicament" />
+      <TextField fx:id="cant" layoutX="391.0" layoutY="188.0" promptText="cantitate" />
+      <ListView fx:id="list" layoutX="27.0" layoutY="113.0" prefHeight="200.0" prefWidth="283.0" />
+      <CheckBox fx:id="n" layoutX="389.0" layoutY="245.0" mnemonicParsing="false" text="Normala" />
+      <CheckBox fx:id="u" layoutX="481.0" layoutY="245.0" mnemonicParsing="false" text="Urgenta" />
+   </children>
+</AnchorPane>

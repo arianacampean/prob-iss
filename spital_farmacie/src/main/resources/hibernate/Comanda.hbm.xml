@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="domain.Comanda"
+           table="Comanda">
+        <id name="id" column="id_com" type="integer">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="id_medicament"
+                column="id_med"
+                type="integer"/>
+        <property
+                name="nr_comanda"
+                column="nr_comanda"
+                 type="integer"/>
+
+        <property
+                name="cantitate"
+                column="cantitate"
+                type="integer"/>
+        <property name="stare" column="stare">
+        <type name="org.hibernate.type.EnumType">
+            <param name="enumClass">domain.Stare</param>
+        </type>
+        </property>
+
+        <property
+                name="sectie"
+                column="sectie"
+                type="integer"/>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FarmacistController">
+   <children>
+      <Label layoutX="142.0" layoutY="33.0" text="Lista comenzi" />
+      <Label layoutX="501.0" layoutY="33.0" text="Lista medicamente pe stoc" />
+      <Button fx:id="ono" layoutX="131.0" layoutY="295.0" mnemonicParsing="false" onAction="#onoreaza" text="Onoreaza comanda" />
+      <Button fx:id="nefin" layoutX="511.0" layoutY="295.0" mnemonicParsing="false" onAction="#nefinalizat" text="Comanda nefinalizata" />
+      <Button layoutX="333.0" layoutY="358.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="LogOut" onAction="#SignOut" />
+      <TableView fx:id="comView" layoutX="23.0" layoutY="70.0" prefHeight="200.0" prefWidth="349.0">
+        <columns>
+          <TableColumn fx:id="id_med1" prefWidth="62.33332824707031" text="id_med" />
+          <TableColumn fx:id="nr_com" prefWidth="56.666648864746094" text="nr. com" />
+            <TableColumn fx:id="cant" prefWidth="63.33332824707031" text="cantitate" />
+            <TableColumn fx:id="staree" prefWidth="115.33335876464844" text="stare" />
+            <TableColumn fx:id="sec" prefWidth="50.33331298828125" text="sectie" />
+        </columns>
+      </TableView>
+      <TableView fx:id="medView" layoutX="391.0" layoutY="70.0" prefHeight="200.0" prefWidth="349.0">
+        <columns>
+          <TableColumn fx:id="id_med2" prefWidth="75.0" text="id_med" />
+          <TableColumn fx:id="num" prefWidth="163.33334350585938" text="nume" />
+            <TableColumn fx:id="cantt" prefWidth="106.66668701171875" text="cantitate_pe_stoc" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="406.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ComandaNouaController">
+   <children>
+      <Label layoutX="103.0" layoutY="50.0" text="Lista medicamente" />
+      <Label layoutX="345.0" layoutY="151.0" text="Cantitate:" />
+      <Label layoutX="370.0" layoutY="223.0" text="Stare:" />
+      <TextField fx:id="cantitate" layoutX="423.0" layoutY="147.0" />
+      <Label layoutX="303.0" layoutY="95.0" prefHeight="42.0" prefWidth="370.0" text="Scrie informatiile necesare pentru adaugarea medicamenutului la comanda.">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="adauga" layoutX="436.0" layoutY="270.0" mnemonicParsing="false" onAction="#adauga_med" text="Adauga la comanda" />
+      <Button fx:id="trimite" layoutX="444.0" layoutY="310.0" mnemonicParsing="false" onAction="#trimite" text="Trimite comanda" />
+      <Button fx:id="inapoi" layoutX="472.0" layoutY="346.0" mnemonicParsing="false" onAction="#showInapoi" text="Inapoi" />
+      <TableView fx:id="tabel" layoutX="32.0" layoutY="105.0" prefHeight="254.0" prefWidth="244.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="C1" />
+          <TableColumn fx:id="nume2" prefWidth="167.33334350585938" text="C2" />
+        </columns>
+      </TableView>
+      <CheckBox fx:id="normala" layoutX="423.0" layoutY="223.0" mnemonicParsing="false" text="Normala" />
+      <CheckBox fx:id="urgenta" layoutX="506.0" layoutY="223.0" mnemonicParsing="false" text="Urgenta" />
+      <Label fx:id="med" layoutX="433.0" layoutY="185.0" prefHeight="17.0" prefWidth="135.0" />
+   </children>
+</AnchorPane>
